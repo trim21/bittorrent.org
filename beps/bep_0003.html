@@ -112,7 +112,7 @@ zero, such as <tt class="docutils literal">i03e</tt>, are invalid, other than
 bencoded) followed by an 'e'. For example <tt class="docutils literal">l4:spam4:eggse</tt>
 corresponds to ['spam', 'eggs'].</li>
 <li>Dictionaries are encoded as a 'd' followed by a list of alternating
-keys and their corresponding values followed by an 'e'. For example,
+unique keys and their corresponding values followed by an 'e'. For example,
 <tt class="docutils literal">d3:cow3:moo4:spam4:eggse</tt> corresponds to {'cow': 'moo',
 'spam': 'eggs'} and <tt class="docutils literal">d4:spaml1:a1:bee</tt> corresponds to
 {'spam': ['a', 'b']}. Keys must be strings and appear in sorted order
