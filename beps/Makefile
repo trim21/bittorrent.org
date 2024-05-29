@@ -63,7 +63,7 @@ BEPS= \
 
 all:	$(BEPS)
 
-RST2HTML ?= rst2html.py
+RST2HTML ?= rst2html
 
 %.html:%.rst_post
 	$(RST2HTML) --template=template.txt --pep-base-url=http://www.bittorrent.org/beps/ --cloak-email-addresses --link-stylesheet --stylesheet=../css/bep.css --no-toc-backlinks $? >$@ --traceback
