@@ -80,6 +80,7 @@ bencoding
   'spam': 'eggs'} and ``d4:spaml1:a1:bee`` corresponds to
   {'spam': ['a', 'b']}. Keys must be strings and appear in sorted order
   (sorted as raw strings, not alphanumerics).
+  Duplicate keys are not allowed, for example ``d3:keyi1e3:keyi2ee``
   
 
 Note that in the context of bencoding strings including dictionary keys
